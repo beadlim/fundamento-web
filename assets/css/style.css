@@ -1,44 +1,169 @@
-/* CSS index.html */
-
-.center {
-    text-align: center;
-}
-
-.container {
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px auto; 
+    max-width: 1200px; 
+    padding: 30px; 
+  }
+  
+  /* Estilo para o cabeçalho (nav) */
+  nav {
+    background-color: #5d46df;
+    color: #fff;
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 30px 20px;
     align-items: center;
-    flex-direction: column;
-}
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
 
-.menu li {
-    display: inline;
-    padding: 15px;
-}
-
-#menu li a {
+  .icone {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .titulo {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
     text-decoration: none;
-    color:black;
-    font-size: 20px;
+    color: #fff;
+  }
+
+  /*Estilo para a main */
+
+/* Estilo para a main */
+.texto_sobre {
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 213, 98);
+    justify-content: center;
 }
 
-#menu li a:hover {
-    color:blueviolet;
+.texto_sobre p {
+    font-size: 14px;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
-.p-30 {
-    padding: 40px;
+.foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    margin-left: 20px; 
 }
 
-.br-50 {
-    border-radius: 50%;
+
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
 }
 
-.wh {
-    width: 280;
-    height: 300;
+.video {
+    max-width: 100%; 
 }
 
-/* CSS contato.html
-*/
+  
+  /* Estilo para o formulário de contato */
+
+  #contato {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #formulario_mensagem {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 48%;
+    text-align: center;
+  
+  }
+  
+  .campos-form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width:70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #5d46df;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+  }
+  
+  /* Estilo para a seção de consulta de CEP */
+  #formulario_buscacep {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 48%;
+    text-align: center;
+    
+  }
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto; 
+    max-width: 1200px; 
+    padding: 30px; 
+  }
+  
+  .icons {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
